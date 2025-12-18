@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gift & Cards | Book World</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;
+    }
+
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, #e2b278, #d9a35f);
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header p {
+        font-family: "Edwardian Script ITC", cursive;
+        font-size: 80px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    header img {
+        width: 120px;
+        height: auto;
+    }
+
+    /* MAIN SECTION */
+    main {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    h2.category-title {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    /* Book Cards */
+    .books-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .book-card {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .book-card img {
+        width: 150px;
+        height: 110px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Per-item image sizing */
+    .book-card.item-1 img {
+        width: 150px;
+        height: auto;
+    }
+
+    .book-card.item-2 img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* item-3 keep image auto-sized */
+    .book-card.item-3 img {
+        width: 130px;
+        height: 100px;
+        max-width: 100%;
+    }
+
+    .book-card.item-4 img {
+        width: 120px;
+        height: 90px;
+    }
+
+    .book-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .book-card p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .book-card button {
+        padding: 10px 15px;
+        background-color: #084c79;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+
+    .book-card button:hover {
+        background-color: #e44e67;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .card-footer .price {
+        font-size: 16px;
+        color: #222;
+        margin: 0;
+    }
+
+    /* Back Link */
+    .back-link {
+        margin-top: 50px;
+    }
+
+    .back-link a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #084c79;
+        font-weight: bold;
+    }
+
+    .back-link a:hover {
+        color: #e44e67;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #09244f;
+        color: #bcb6b6;
+        padding: 50px 20px;
+    }
+
+    .footer-container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    footer h3 {
+        color: white;
+        margin-bottom: 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-details input {
+        padding: 10px;
+        width: 230px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .footer-details button {
+        padding: 10px 18px;
+        background-color: #e44e67;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .footer-details button:hover {
+        background-color: #c83c55;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        header p {
+            font-size: 55px;
+        }
+
+        .books-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .book-card {
+            width: 90%;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <p>Book World</p>
+    <img src="images/logo.jpg" alt="Book World Logo">
+</header>
+
+<main>
+    <h2 class="category-title">Gifts & Cards</h2>
+
+    <div class="books-container">
+        <!--Item 1-->
+        <div class="book-card item-1">
+            <img src="images/gift-card.JPG" alt="Gift Card">
+            <h3>Gift Card</h3>
+            <p>For Games ITunes and Streams</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 2,000/= <br>Rs. 3,000/= <br>Rs. 5,000/=</strong></p><br>
+                <button>Order Now</button>
+            </div>
+        </div>  
+
+        <!--Item 2-->
+        <div class="book-card item-2">
+            <img src="images/gift-voucher.JPG" alt="Gift Voucher">
+            <h3>Gift Voucher</h3>
+            <p>For Clothes and Cosmetics</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 10,000/= <br>Rs. 25,000/= <br>Rs. 50,000/=</strong></p><br>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <!--Item 3-->
+        <div class="book-card item-3">
+            <img src="images/gift-shoulder-bag.JPG" alt="Shoulder Bag">
+            <h3>Shoulder Bag</h3>
+            <p>Shoulder Bags for Women <br>
+                Black, Blue Colors </p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 1,200/=</strong></p><br>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <!--Item 4-->
+        <div class="book-card item-4">
+            <img src="images/gift-pencil-cases.JPG" alt="Pencil Cases">
+            <h3>Pencil Cases</h3>
+            <p>Translucent <br>
+                Assorted Color Zip(Black, Blue, Red)</p> 
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 240/=</strong></p><br>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="back-link">
+        <a href="categories-page.html">← Back to Categories</a></h2>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Book World</h3>
+            <p>
+                123 Book Street <br>
+                City Center <br>
+                Sri Lanka <br>
+                Phone: +94 12 345 6789 <br>
+                Email: bookworld@gmail.com
+            </p>
+        </div>
+        <div class="footer-details">
+            <h3>Stay Updated with Book World</h3>
+            <input type="email" placeholder="Enter your email"><br>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</footer>
+
+
+    </body>
+</html>

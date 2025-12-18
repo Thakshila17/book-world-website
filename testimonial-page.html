@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Testimonials | Book World</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;
+    }
+
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, #e2b278, #d9a35f);
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-family: "Edwardian Script ITC", cursive;
+        font-size: 80px;
+        margin-bottom: 15px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    /* MAIN SECTION */
+    main {
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    /* TESTIMONIAL CARDS */
+    .testimonial-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .testimonial-card {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        padding: 25px;
+        width: 320px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .testimonial-card h3 {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .testimonial-card p {
+        margin: 10px 0;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .testimonial-card video,
+    .testimonial-card audio {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    /* Feedback */
+    .feedback {
+        margin: 50px 0;
+        font-size: 18px;
+    }
+
+    /* Back Link */
+    .back-link {
+        margin-top: 20px;
+    }
+
+    .back-link a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #084c79;
+        font-weight: bold;
+    }
+
+    .back-link a:hover {
+        color: #e44e67;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #09244f;
+        color: #bcb6b6;
+        padding: 50px 20px;
+    }
+
+    .footer-container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    footer h3 {
+        color: white;
+        margin-bottom: 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-details input {
+        padding: 10px;
+        width: 230px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .footer-details button {
+        padding: 10px 18px;
+        background-color: #e44e67;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .footer-details button:hover {
+        background-color: #c83c55;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 55px;
+        }
+
+        .testimonial-card {
+            width: 90%;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Book World</h1>
+    <img src="images/logo.jpg" alt="Book World Logo">
+</header>
+
+<main>
+    <h2 style="margin-bottom: 50px; font-size: 35px;">Customer Testimonials</h2>
+
+    <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <h3>Kasun Perera</h3>
+            <p><strong>Date:</strong> August 27, 2024</p>
+            <p>"Highly recommended to everyone. This bookstore has many amazing and wonderful books."</p>
+            <video controls>
+                <source src="Kasun-testimonial.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="Kasun-audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <h3>Amali Silva</h3>
+            <p><strong>Date:</strong> November 10, 2024</p>
+            <p>"An amazing service. I am very satisfied with their books and thanks for the gifts."</p>
+            <video controls>
+                <source src="Amali-testimonial.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="Amali-audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <h3>John David</h3>
+            <p><strong>Date:</strong> April 3, 2025</p>
+            <p>"This bookstore never disappoints! I always find exactly what I'm looking for."</p>
+            <video controls>
+                <source src="John-testimonial.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="John-audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <label><input type="checkbox"> Did you enjoy our service?</label>
+    </div>
+
+    <div class="back-link">
+        <a href="home-page.html">← Back</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Book World</h3>
+            <p>
+                123 Book Street <br>
+                City Center <br>
+                Sri Lanka <br>
+                Phone: +94 12 345 6789 <br>
+                Email: bookworld@gmail.com
+            </p>
+        </div>
+
+        <div class="footer-details">
+            <h3>Stay Updated with Book World</h3>
+            <input type="email" placeholder="Enter your email"><br>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

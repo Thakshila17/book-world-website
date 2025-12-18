@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiction | Book World</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;
+    }
+
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, #e2b278, #d9a35f);
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header p {
+        font-family: "Edwardian Script ITC", cursive;
+        font-size: 80px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    header img {
+        width: 120px;
+        height: auto;
+    }
+
+    /* MAIN SECTION */
+    main {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    h2.category-title {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    /* Book Cards */
+    .books-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .book-card {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }   
+
+    .book-card img {
+        width: 100px;
+        height: 140px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .book-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .book-card .author {
+        font-size: 13px;
+        color: #777;
+        font-style: italic;
+        margin: 0 0 10px 0;
+    }
+
+    .book-card p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .book-card button {
+        padding: 10px 15px;
+        background-color: #084c79;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+
+    .book-card button:hover {
+        background-color: #e44e67;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .card-footer .price {
+        font-size: 16px;
+        color: #222;
+        margin: 0;
+    }
+
+    /* Back Link */
+    .back-link {
+        margin-top: 50px;
+    }
+
+    .back-link a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #084c79;
+        font-weight: bold;
+    }
+
+    .back-link a:hover {
+        color: #e44e67;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #09244f;
+        color: #bcb6b6;
+        padding: 50px 20px;
+    }
+
+    .footer-container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    footer h3 {
+        color: white;
+        margin-bottom: 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-details input {
+        padding: 10px;
+        width: 230px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .footer-details button {
+        padding: 10px 18px;
+        background-color: #e44e67;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .footer-details button:hover {
+        background-color: #c83c55;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        header p {
+            font-size: 55px;
+        }
+
+        .books-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .book-card {
+            width: 90%;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <p>Book World</p>
+    <img src="images/logo.jpg" alt="Book World Logo">
+</header>
+
+<main>
+    <h2 class="category-title">Fiction</h2>
+
+    <div class="books-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img src="images/fiction-harry-potter.JPG" alt="Harry Potter">
+            <h3>Harry Potter and the Philosopher's Stone</h3>
+            <p class="author">by J.K. Rowling</p>
+            <p>A young boy discovers he is a wizard and begins his journey at Hogwarts.</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 3,860/=</strong></p>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img src="images/fiction-the-alchemist.jpg" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p class="author">by Paulo Coelho</p>
+            <p>A philosophical story about following dreams and finding purpose in life.</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 2,200/=</strong></p>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <img src="images/fiction-the-hobbit.jpg" alt="The Hobbit">
+            <h3>The Hobbit</h3>
+            <p class="author">by J.R.R. Tolkien</p>
+            <p>A fantasy adventure of courage, friendship, and unexpected heroes.</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 3,200/=</strong></p>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <img src="images/fiction-life-of-pi.jpg" alt="Life of Pi">
+            <h3>Life of Pi</h3>
+            <p class="author">by Yann Martel</p>
+            <p>A survival story about faith, courage, and imagination.</p>
+            <div class="card-footer">
+                <p class="price"><strong>Rs. 2,900/=</strong></p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-link">
+        <a href="categories-page.html">← Back to Categories</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Book World</h3>
+            <p>
+                123 Book Street <br>
+                City Center <br>
+                Sri Lanka <br>
+                Phone: +94 12 345 6789 <br>
+                Email: bookworld@gmail.com
+            </p>
+        </div>
+        <div class="footer-details">
+            <h3>Stay Updated with Book World</h3>
+            <input type="email" placeholder="Enter your email"><br>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
