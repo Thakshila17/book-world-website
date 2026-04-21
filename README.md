@@ -44,7 +44,7 @@ Backend features such as login, admin panel, and database integration are planne
 ---
 
 ## 👤 Author
-- **Name:** Thakshila  
+- **Name:** Thakshila Maduwanthi
 ## 🔗 Links
 - Live Demo: [Book World Website](https://thakshila17.github.io/book-world-website/)
 - Source Code: [GitHub Repository](https://github.com/Thakshila17/book-world-website)
