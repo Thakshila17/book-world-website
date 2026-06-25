@@ -5,7 +5,7 @@ This is a frontend Book Shop website developed as a student project using **HTML
 ---
 
 ## 🌟 Features
-- Home page
+- Home page (Index.html)
 - Explore Books page (Best Selling Books of the Month, New Arrivals, etc.)
 - Categories page 
 - Fiction page
