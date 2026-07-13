@@ -23,8 +23,8 @@ This is a frontend Book Shop website developed as a student project using **HTML
 ---
 
 ## 🛠 Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ---
 
