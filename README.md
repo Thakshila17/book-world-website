@@ -37,9 +37,8 @@ Backend features such as login, admin panel, and database integration are planne
 ---
 
 ## 📸 Screenshots
-<img src="screenshots/home-page.png" alt="Home Page" width="400"> <img src="screenshots/categories-page.png" alt="Categories Page" width=400">
-<img src="screenshots/fiction-page.png" alt="Fiction Page" width="400">
-<img src="screenshots/contact-us-page.png" alt="Contact Us Page" width="400">
+<img src="screenshots/home-page.png" alt="Home Page" width="400"> <hr> <img src="screenshots/categories-page.png" alt="Categories Page" width="400">
+<img src="screenshots/fiction-page.png" alt="Fiction Page" width="400"> <hr> <img src="screenshots/contact-us-page.png" alt="Contact Us Page" width="400">
 ---
 
 ## 👤 Author
